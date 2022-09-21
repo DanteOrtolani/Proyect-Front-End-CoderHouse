@@ -367,6 +367,19 @@ text-align: center;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*--------------------- 
 CSS PARA DESTKOP 992px 
 ----------------------*/
@@ -399,6 +412,8 @@ CSS PARA DESTKOP 992px
  display: flex;
 }
 
+
+
 .menu_links_ul{
  list-style: none;
  margin: left 50px;px;
@@ -415,10 +430,16 @@ CSS PARA DESTKOP 992px
  font-size: 17px;
 }
 
+.menu_items_li:hover{
+ transform: scale(1.2);
+ transition: 0.3s;
+}
+
 .nav_links{
  text-decoration: none;
  color: rgb(255, 255, 255);
 }
+
 
 
 /* CONTENEDOR DE HERO */
@@ -452,15 +473,24 @@ CSS PARA DESTKOP 992px
 
 .catalogo_foto1{
  display: inline-block;
- transition: all;
-}
-
-.foto1{
- transition: all;
 }
 
 .foto1:hover{
- transform: translate(150px, 150px) scale (1.3);
+ transform: scale(1.4) translate(40px);
+ transition: 2s;
+ border-radius: 10px;
+}
+
+.foto2:hover{
+ transform: scale(1.4);
+ transition: 2s;
+ border-radius: 10px;
+}
+
+.foto3:hover{
+ transform: scale(1.4) translate(-40px);
+ transition: 2s;
+ border-radius: 10px;
 }
 
 .catalogo_foto2{
@@ -525,6 +555,7 @@ CSS PARA DESTKOP 992px
  font-size: large;
  color: rgb(255, 255, 255);
  margin-bottom: 16px;
+ cursor: pointer;
 }
 
 .form-login p{
