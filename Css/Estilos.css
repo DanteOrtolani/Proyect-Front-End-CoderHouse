@@ -2,16 +2,6 @@
 
 /* CSS GENERAL,  COMPARTEN MOBILE Y DESKTOP ---------------------------------------*/
 
-body {
-	font-family: 'Rajdhani', sans-serif;
-	width: 95%;
-	max-width: 1300px;
-	height: 95%;
-	margin-bottom: 20px;
-	margin-left: 20px;
-	margin: auto;
-}
-
 
 .main {
 	font-size: 25px;
