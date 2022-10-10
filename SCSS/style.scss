@@ -1,0 +1,770 @@
+$primary: #638597;
+
+$theme-colors: (
+  "primary": #638597,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+@for $p from 1 through 10 {
+    .padding-#{$p}{
+        padding: 1rem * $p;
+    }
+}
+
+
+
+/* CSS GENERAL,  COMPARTEN MOBILE Y DESKTOP ---------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&display=swap');
+
+/* Contenedor general donde esta la pagina, 
+tiene margenes para que no ocupe todo el ancho 
+y alto de la pagina*/
+
+*{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.main {
+    font-size: 25px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 50px;
+
+
+
+
+    &_header {
+        width: 100%;
+        height: 150px;
+        margin-top: 15px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+}
+
+.imagenfondo::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url("../Archivos/Fotos/FotosMarcaRopa/fondopagina.jpg");
+    background-size: cover;
+    z-index: -1;
+}
+
+.ul {
+    list-style: none;
+}
+
+
+/* Menu navegacion arriba a la derecha */
+
+.nav_menu_de_arriba {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+
+    &_links {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.Logofoto {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.menu_links_ul {
+    list-style: none;
+    gap: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+}
+
+
+.hero_container {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 60px;
+    justify-content: center;
+
+    &_catalogo {
+        display: grid;
+        justify-items: center;
+        row-gap: 4em;
+    }
+
+    &_singup {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        gap: 1em;
+        margin-bottom: 100px;
+    }
+}
+
+.somos_vos {
+    display: flex;
+    text-align: center;
+    color: white;
+}
+
+
+.vivi_la_experiencia {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 3em;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.boton_anchor_sin_estilo {
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    align-items: center;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.olvidaste_tu_contrasena {
+    display: inline-block;
+    justify-self: center;
+    text-align: center;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.form-login p {
+    height: 40px;
+
+    &_a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.footer a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #f0fafa;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+
+
+
+/* INICIO CSS MOBILE PAGINA "CATALAGO" ---------------------------------------*/
+
+.foto1 {
+    justify-self: center;
+}
+
+
+
+
+
+/* INICIO CSS MOBILE PAGINA "SING UP" ---------------------------------------*/
+
+.p {
+    justify-self: center;
+    position: absolute;
+}
+
+
+.controls {
+    width: 100%;
+    border: 1px solid #bdbdbd;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+}
+
+.buttons {
+    width: 100%;
+    height: 40px;
+    background: #638597;
+    border: none;
+    font-size: large;
+    color: white;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.olvidaste {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    &_container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.form_container {
+    display: grid;
+    width: 600px;
+    row-gap: 40px;
+    grid-template-columns: max-content;
+    grid-template-rows: 2;
+    grid-template-areas: 'form_login'
+        'olvidaste_container';
+    grid-template-columns: auto;
+}
+
+
+
+
+
+/* INICIO CSS MOBILE PAGINA "CONTACTO" ---------------------------------------*/
+
+.container-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    align-items: center;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-top: 10px;
+}
+
+.form {
+    display: flex;
+    padding: 10px, 10px, 10px, 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    &-login {
+        position: relative;
+        width: 400px;
+        height: 340px;
+        margin: auto;
+        margin-bottom: 40px;
+        margin-top: 10px;
+        box-shadow: 25px 13px 37px #1a1919;
+        padding: 30px 80px;
+        align-items: center;
+    }
+
+    &-login h5 {
+        margin: 0;
+        text-align: center;
+        height: 40px;
+        margin-bottom: 30px;
+        font-size: 30px;
+        color: white;
+    }
+
+    &-login p {
+        height: 40px;
+        position: absolute;
+    }
+
+    &-login a {
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        position: absolute;
+    }
+
+    &-login a:hover {
+        text-decoration: underline;
+    }
+}
+
+.info-form {
+    display: flex;
+}
+
+.container-form h2 {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 35px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    color: white;
+}
+
+.container-form a i {
+    color: #203eb7;
+    margin-right: 10px;
+}
+
+.container-form form .campo,
+textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #c0c0c0;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+    display: inline-block;
+    color: white;
+    background-color: transparent;
+    align-items: center;
+}
+
+.container-form form textarea {
+    background-color: transparent;
+}
+
+.container-form .btn-enviar {
+    padding: 15px;
+    font-size: 16px;
+    align-items: center;
+    justify-self: center;
+    border: none;
+    outline: 0px;
+    background: #638597;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-enviar {
+    display: grid;
+    grid-auto-flow: row;
+    justify-self: center;
+    margin: 0%;
+}
+
+.campo {
+    width: 100%;
+    display: inline-bloc;
+    text-align: start;
+}
+
+
+
+
+/* PAGINA DE "NOSOTROS" */
+
+.nosotros_div {
+    justify-self: center;
+    display: grid;
+    margin: 20px;
+    padding: 5px;
+}
+
+.nosotros_parrafo {
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+    color: white;
+}
+
+.main {
+    margin-bottom: 50px;
+}
+
+.boton_vivi_la_experiencia {
+    display: inline-block;
+    justify-self: center;
+    text-align: center;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------- 
+CSS PARA DESTKOP 1263px 
+----------------------*/
+@media (min-width: 1263px) {
+
+    /* Fuente de la pagina */
+    .main_header {
+        width: 100%;
+        height: 150px;
+        margin-top: 15px;
+        position: relative;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* MENU NAV ARRIBA A LA DERECHA */
+    .nav_menu_de_arriba {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .Logofoto {
+        padding-top: 5px;
+        padding-bottom: 20px;
+        display: flex;
+    }
+
+    .menu_links_ul {
+        list-style: none;
+        margin: left 50px;
+        gap: 3em;
+        display: flex;
+    }
+
+    .menu_items_li {
+        display: inline-block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 15px;
+        display: inline-block;
+        font-size: 17px;
+    }
+
+    .menu_items_li:hover {
+        transform: scale(1.2);
+        transition: 0.3s;
+    }
+
+    .nav_links {
+        text-decoration: none;
+        color: white;
+    }
+
+    /* CONTENEDOR DE HERO */
+    .hero_container {
+        display: grid;
+        grid-auto-flow: row;
+        gap: 6em;
+        row-gap: 60px;
+        justify-content: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        margin-left: 40px;
+        margin-right: 40px;
+        font-size: 60px;
+
+        &_catalogo {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+    }
+
+    /* CONTENEDOR DE HERO CATALOGO DIFERENTE */
+
+    .card {
+        position: relative;
+
+        &-img-top:hover {
+            transform: scale(1.12);
+            transition: .5s;
+            border-radius: 10px;
+        }
+    }
+
+    .card:hover .image {
+        opacity: 0.2;
+    }
+
+    .card:hover .overlay {
+        opacity: 1;
+    }
+
+    .image {
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .overlay {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .catalogo_foto1 {
+        display: inline-block;
+    }
+
+
+
+    /*------------------------------------
+ Seccion FORMULARIO de LOG IN */
+
+    .form-login {
+        width: 400px;
+        height: 340px;
+        margin: auto;
+        margin-top: 10px;
+        box-shadow: 25px 13px 37px #1a1919;
+        padding: 30px 80px;
+        align-items: center;
+
+        &_container {
+            display: grid;
+            width: 600px;
+            row-gap: 70px;
+            grid-template-columns: max-content;
+            grid-template-rows: 2;
+            grid-template-areas: 'form_login'
+                'olvidaste_container';
+            grid-template-columns: auto;
+        }
+    }
+
+    .form-login h5 {
+        margin: 0;
+        text-align: center;
+        height: 40px;
+        margin-bottom: 30px;
+        font-size: 30px;
+        color: white;
+    }
+
+    .controls {
+        width: 100%;
+        border: 1px solid #bdbdbd;
+        margin-bottom: 15px;
+        padding: 11px 10px;
+        font-size: 14px;
+        font-weight: bold;
+        align-items: center;
+        background-color: transparent;
+        color: white;
+    }
+
+    .buttons {
+        width: 100%;
+        height: 40px;
+        background: #638597;
+        border: none;
+        font-size: large;
+        color: white;
+        margin-bottom: 16px;
+        cursor: pointer;
+    }
+
+    .form-login p {
+        height: 40px;
+        text-align: center;
+    }
+
+    .form-login a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .form-login a:hover {
+        text-decoration: underline;
+    }
+
+    .olvidaste_container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .boton_vivi_la_experiencia {
+        display: inline-block;
+        justify-self: center;
+        text-align: center;
+        background-color: transparent;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+
+
+
+    /*-------------------------------------
+ Seccion de FORMULARIO DE CONTACTO */
+
+    .container-form {
+        width: 100%;
+        max-width: 900px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+        margin-top: 10px;
+    }
+
+    .container-form h2 {
+        margin-bottom: 15px;
+        font-size: 35px;
+        color: white;
+    }
+
+    .container-form a i {
+        color: #203eb7;
+        margin-right: 10px;
+    }
+
+    .container-form form .campo,
+    textarea {
+        width: 100%;
+        padding: 15px 10px;
+        font-size: 16px;
+        border: 1px solid #c0c0c0;
+        margin-bottom: 20px;
+        border-radius: 3px;
+        outline: 0px;
+        color: white;
+        background-color: transparent;
+    }
+
+    .container-form form textarea {
+        max-width: 800px;
+        min-width: 580px;
+        min-height: 100px;
+        max-height: 110px;
+        background-color: transparent;
+    }
+
+    .container-form .btn-enviar {
+        padding: 15px;
+        font-size: 16px;
+        border: none;
+        outline: 0px;
+        background: #638597;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    /* Seccion de "Nosotros" */
+
+    .nosotros_div {
+        justify-self: center;
+        display: grid;
+        margin: 20px;
+        padding: 5px;
+
+        &_parrafo {
+            text-align: center;
+            margin-right: 220px;
+            margin-left: 220px;
+            margin-bottom: 150px;
+            padding: 5px;
+            color: white;
+        }
+    }
+
+
+    /* Seccion de Main "VIVI LA EXPERIENCIA" */
+
+
+    .somos_vos {
+        color: white;
+    }
+
+    .boton_mainpage {
+        display: inline-block;
+        text-size-adjust: 20px;
+        justify-self: center;
+        background-color: transparent;
+        text-decoration: none;
+        color: white;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 75px;
+        margin-bottom: 50px;
+        color: white;
+    }
+
+    .footer a {
+        text-decoration: none;
+        font-size: 28px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        color: #f0fafa;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+        transition: all .4s ease-in-out;
+    }
+
+    .footer a:hover{
+        transform: scale(1.2);
+        color:#638597;
+    }
+
+}

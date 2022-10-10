@@ -6,13 +6,24 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Catalogo</title>
-	<link rel="icon" href="./Archivos/Fotos/favicon/favicon-32x32.png" type="image/x-icon" />
-	<link rel="stylesheet" href="./Css/Estilos.css" />
+	<link rel="icon" href="./archivos/fotos/favicon/favicon-32x32.png" type="image/x-icon" />
+	<link rel="stylesheet" href="./css/estilos.css" />
 
 	<!-- CSS only -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+	<!-- Estilos Iconos redes sociales -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/e63edafc97.js" crossorigin="anonymous"></script>
+
 	<!-- JavaScript Bundle with Popper -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+		crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,52 +33,53 @@
 		<header class="main_header">
 
 			<div class="container fluid bg primary d-flex align-items-center">
-				
-				<!-- MENU DE NAVEGACION ARRIBA A LA DRECHA -->
-	
-				<div class="container">
-					<nav class="navbar navbar-expand-lg navbar-dark">
-						<div class="container-fluid">
-							
-							<div class="Logofoto">
-								<img src="./Archivos/Fotos/Logos/Logo RIPIA Blanco HD PNG.png" alt="logo de mi Sitio" width="320"
-									height="80" />
-							</div>
 
-							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<!-- MENU DE NAVEGACION ARRIBA A LA DRECHA -->
+
+				<div class="container">
+					<nav class="navbar navbar-expand-lg navbar-dark padding-1">
+						<div class="container-fluid">
+
+							<a class="navbar-brand" href="./index.html"> <img
+									src="./archivos/fotos/logos/Logo RIPIA Blanco HD PNG.png" alt="logo del sitio"
+									width="320" height="80" /></a>
+
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+								data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+								aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
 							</button>
-		
+
 							<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		
+
 								<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-																
+
 									<li class="nav-item">
-										<a class="nav-link" href="/index.html">Inicio</a>
+										<a class="nav-link" href="./index.html">Inicio</a>
 									</li>
-									
+
 									<li class="nav-item">
-										<a class="nav-link" href="/Catalogo.html">Catalogo</a>
+										<a class="nav-link" href="./catalogo.html">Catalogo</a>
 									</li>
-			
+
 									<li class="nav-item">
-										<a class="nav-link" href="/Singup.html">Sing Up</a>
+										<a class="nav-link" href="./singup.html">Sing Up</a>
 									</li>
-			
+
 									<li class="nav-item">
-										<a class="nav-link" href="/Contactus.html">Contacto</a>
+										<a class="nav-link" href="./contactus.html">Contacto</a>
 									</li>
-		
+
 									<li class="nav-item">
-										<a class="nav-link" href="/Nosotros.html">Nosotros</a>
+										<a class="nav-link" href="./nosotros.html">Nosotros</a>
 									</li>
-		
-		
+
+
 								</ul>
-		
+
 							</div>
 						</div>
-					  </nav>
+					</nav>
 				</div>
 			</div>
 
@@ -80,69 +92,250 @@
 			<!-- hero de catalogo -->
 			<section class="hero_container_catalogo">
 
+				<section class="gallery">
+					<div class="container">
+						<div class="row gx-xxl-2 gy-xxl-2">
+
+							<!-- CARD 1 -->
+
+							<div class="col align-items-center">
+								<div class="card text-center text-white bg-transparent border-0 mx-auto d-block"
+									style="width: 25rem;">
+
+									<img src="./archivos/fotos/fotosmarcaropa/img1.jpg" class="card-img-top" alt="..."
+										width="350px" height="500px">
+
+									<div class="overlay">
+										<button class="btn btn-dark btn-lg"><i class="fas fa-cart-plus mr-2"></i>Add to
+											Cart</button>
+									</div>
+
+									<div class="card-body">
+										<h5 class="card-title pt-3">Buzo "Just in Love with Pink"</h5>
+										<h6 class="card-subtitle mb-2 text-white">$14600</h6>
+										<h6 class="card-subtitle mb-2 text-white">Talle: S</h6>
+									</div>
+								</div>
+							</div>
 
 
-				<!-- foto1 -->
-				<div class="catalogo_foto1">
+							<!-- CARD 2 -->
 
-					<img src="./Archivos/Fotos/FotosMarcaRopa/christian-bolt-VW5VjskNXZ8-unsplash.jpg" class="foto1"
-						alt="foto1" width="350px" height="450px">
+							<div class="col">
+								<div class="card text-center text-white bg-transparent border-0 mx-auto d-block"
+									style="width: 25rem;">
 
-					<ul class="lista_detalles_de_fotos_de_productos">
-						<li>remera: <strong>"Take The Trails"</strong></li>
-						<li>color: blanco y negro</li>
-						<li>talle: S</li>
-					</ul>
+									<img src="./archivos/fotos/fotosmarcaropa/img2.jpg" class="card-img-top" alt="..."
+										width="350px" height="500px">
 
-				</div>
+									<div class="overlay">
+										<button class="btn btn-dark btn-lg"><i class="fas fa-cart-plus mr-2"></i>Add to
+											Cart</button>
+									</div>
 
-				<!-- foto2 -->
-				<div class="catalogo_foto2">
+									<div class="card-body">
+										<h5 class="card-title pt-3">Campera "This is not me"</h5>
+										<h6 class="card-subtitle mb-2 text-white">$26000</h6>
+										<h6 class="card-subtitle mb-2 text-white">Talle: M</h6>
+									</div>
+								</div>
+							</div>
 
-					<img src="./Archivos/Fotos/FotosMarcaRopa/joshua-rondeau-K0FXYExhnGc-unsplash.jpg" class="foto2"
-						alt="foto2" width="350px" height="450px">
 
-					<ul class="lista_detalles_de_fotos_de_productos">
-						<li>conjunto: <strong>"Business Woman"</strong></li>
-						<li>color: negro</li>
-						<li>talle: S</li>
-					</ul>
+							<!-- CARD 3 -->
 
-				</div>
+							<div class="col mb-3">
+								<div class="card text-center text-white bg-transparent border-0 mx-auto d-block"
+									style="width: 25rem;">
 
-				<!-- foto3 -->
-				<div class="catalogo_foto3">
+									<img src="./archivos/fotos/fotosmarcaropa/img3.jpg" class="card-img-top" alt="..."
+										width="350px" height="500px">
 
-					<img src="./Archivos/Fotos/FotosMarcaRopa/dom-hill-nimElTcTNyY-unsplash.jpg" class="foto3"
-						alt="foto3" width="350px" height="450px">
+									<div class="overlay">
+										<button class="btn btn-dark btn-lg"><i class="fas fa-cart-plus mr-2"></i>Add to
+											Cart</button>
+									</div>
 
-					<ul class="lista_detalles_de_fotos_de_productos">
-						<li>Conjunto: <strong>"Get Over It"</strong></li>
-						<li>color: amarillo</li>
-						<li>talle: M</li>
-					</ul>
+									<div class="card-body">
+										<h5 class="card-title pt-3">Conjunto "Busines Woman"</h5>
+										<h6 class="card-subtitle mb-2 text-white">$18000</h6>
+										<h6 class="card-subtitle mb-2 text-white">Talle: S</h6>
+									</div>
+								</div>
+							</div>
 
-				</div>
+							<!-- CARD 4 -->
+
+							<div class="col mb-3">
+								<div class="card text-center text-white bg-transparent border-0 mx-auto d-block"
+									style="width: 25rem;">
+
+									<img src="./archivos/fotos/fotosmarcaropa/img4.jpg" class="card-img-top" alt="..."
+										width="350px" height="500px">
+
+									<div class="overlay">
+										<button class="btn btn-dark btn-lg"><i class="fas fa-cart-plus mr-2"></i>Add to
+											Cart</button>
+									</div>
+
+									<div class="card-body">
+										<h5 class="card-title pt-3">Joggin "Just chill bro"</h5>
+										<h6 class="card-subtitle mb-2 text-white">$8900</h6>
+										<h6 class="card-subtitle mb-2 text-white">$Talle: L</h6>
+									</div>
+								</div>
+							</div>
+
+
+							<!-- CARD 5 -->
+
+							<div class="col mb-3">
+								<div class="card text-center text-white bg-transparent border-0 mx-auto d-block"
+									style="width: 25rem;">
+
+									<img src="./archivos/fotos/fotosmarcaropa/img5.jpg" class="card-img-top" alt="..."
+										width="350px" height="500px">
+
+									<div class="overlay">
+										<button class="btn btn-dark btn-lg"><i class="fas fa-cart-plus mr-2"></i>Add to
+											Cart</button>
+									</div>
+
+									<div class="card-body">
+										<h5 class="card-title pt-3">Remera "Out Cast"</h5>
+										<h6 class="card-subtitle mb-2 text-white">$6500</h6>
+										<h6 class="card-subtitle mb-2 text-white">$Talle: M</h6>
+									</div>
+								</div>
+							</div>
+
+
+							<!-- CARD 6 -->
+
+							<div class="col mb-3">
+								<div class="card text-center text-white bg-transparent border-0 mx-auto d-block"
+									style="width: 25rem;">
+
+									<img src="./archivos/fotos/fotosmarcaropa/img6.jpg" class="card-img-top" alt="..."
+										width="350px" height="500px">
+
+									<div class="overlay">
+										<button class="btn btn-dark btn-lg"><i class="fas fa-cart-plus mr-2"></i>Add to
+											Cart</button>
+									</div>
+
+									<div class="card-body">
+										<h5 class="card-title pt-3">Campera Jean "Normie"</h5>
+										<h6 class="card-subtitle mb-2 text-white">$27000</h6>
+										<h6 class="card-subtitle mb-2 text-white">Talle: S</h6>
+									</div>
+								</div>
+							</div>
+
+							<!-- CARD 7 -->
+
+							<div class="col mb-3">
+								<div class="card text-center text-white bg-transparent border-0 mx-auto d-block"
+									style="width: 25rem;">
+
+									<img src="./archivos/fotos/fotosmarcaropa/img7.jpg" class="card-img-top" alt="..."
+										width="350px" height="500px">
+
+									<div class="overlay">
+										<button class="btn btn-dark btn-lg"><i class="fas fa-cart-plus mr-2"></i>Add to
+											Cart</button>
+									</div>
+
+									<div class="card-body">
+										<h5 class="card-title pt-3">Vestido "Spring Fest"</h5>
+										<h6 class="card-subtitle mb-2 text-white">$12000</h6>
+										<h6 class="card-subtitle mb-2 text-white">Talle: S</h6>
+									</div>
+								</div>
+							</div>
+
+
+							<!-- CARD 8 -->
+
+							<div class="col mb-3">
+								<div class="card text-center text-white bg-transparent border-0 mx-auto d-block"
+									style="width: 25rem;">
+
+									<img src="./archivos/fotos/fotosmarcaropa/img8.jpg" class="card-img-top" alt="..."
+										width="350px" height="500px">
+
+									<div class="overlay">
+										<button class="btn btn-dark btn-lg"><i class="fas fa-cart-plus mr-2"></i>Add to
+											Cart</button>
+									</div>
+
+									<div class="card-body">
+										<h5 class="card-title pt-3">Remera "Take the Trails"</h5>
+										<h6 class="card-subtitle mb-2 text-white">$5600</h6>
+										<h6 class="card-subtitle mb-2 text-white">Talle: S</h6>
+									</div>
+								</div>
+							</div>
+
+
+							<!-- CARD 9 -->
+
+							<div class="col mb-3">
+								<div class="card text-center text-white bg-transparent border-0 mx-auto d-block"
+									style="width: 25rem;">
+
+									<img src="./archivos/fotos/fotosmarcaropa/img9.jpg" class="card-img-top" alt="..."
+										width="350px" height="500px">
+
+									<div class="overlay">
+										<button class="btn btn-dark btn-lg"><i class="fas fa-cart-plus mr-2"></i>Add to
+											Cart</button>
+									</div>
+
+									<div class="card-body">
+										<h5 class="card-title pt-3">Remera "Peace Until Dead"</h5>
+										<h6 class="card-subtitle mb-2 text-white">$8300</h6>
+										<h6 class="card-subtitle mb-2 text-white">Talle: S</h6>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+				</section>
 
 			</section>
 
+
+
+
+
+
 			<!-- Seccion Main vivi la experiencia de ser vos-->
-			<section class="main">
-				<a href="#" class="boton_mainpage">Vivi la experiencia de ser vos</a>
+			<section class="vivi_la_experiencia">
+				<a href="./index.html" class="boton_vivi_la_experiencia">Vivi la experiencia de ser vos</a>
 			</section>
 
 		</main>
 
-
+		
 		<!-- inicio de footer -->
 		<footer>
 			<section class="footer">
-				<p>Logo</p>
-				<p>datos de contacto</p>
-				<p>redes sociales</p>
+
+				<a href="https://www.tiktok.com/" target="_blank" class="fa-brands fa-tiktok"></a>
+
+				<a href="https://www.twitter.com/" target="_blank" class="fa-brands fa-twitter"></a>
+
+				<a href="https://www.instagram.com/" target="_blank" class="fa-brands fa-instagram"></a>
+
+				<a href="https://www.facebook.com/" target="_blank" class="fa-brands fa-facebook"></a>
+
+				
 			</section>
 		</footer>
-
 	</div>
 
 </body>
